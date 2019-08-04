@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title name="translate" caption="jumbTitle">Booking Home Cleaning</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/roboto-font.css">
+	<link rel="stylesheet" type="text/css"
+		href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+
+	<!-- Main Style Css -->
+
+
+
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<link id="chnageBoot" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous"> -->
+
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+
+	<!-- Map Style Css -->
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+	<link rel='stylesheet'
+		href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css'
+		type='text/css' />
+
+	<!-- General js  -->
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-light bg-light">
+		<a  class="navbar-brand getLang  p-2  text-white" href="#">AR</a>
+	</nav>
+	<div class="page-content" style="background:#F6F9FB">
+
+		<div class="wizard-v3-content">
+
+			<div class="wizard-form">
+				<div class="wizard-header">
+					<div class="jumbotron">
+						<div class="container">
+							<h1 name="translate" caption="jumbTitle" class="display-4">Booking Home Cleaning</h1>
+							<p class="lead mt-4"></p>
+
+						</div>
+					</div>
+				</div>
+				<form class="form-booking" action="#" method="post">
+					<div id="form-total">
+						<!-- SECTION 1 -->
+						<h2>
+							<span class="step-icon"><i class="far fa-building"></i></span>
+							<span name="translate" caption="services"  class="step-text">Services</span>
+						</h2>
+						<section>
+							<div class="inner">
+								<h3 name="translate" caption="cleanInfo">Clean Information:</h3>
+								<div class="form-group">
+									<label name="translate" caption="manyCleaner" for="formCleanNum">How many cleaners do you
+										need?</label>
+									<select class="form-control" id="formCleanNum">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label name="translate" caption="longCleanr"  for="formDuration">How long do you need your
+										cleaner to stay?</label>
+									<select class="form-control" id="formDuration">
+										<option name="translate" caption="oneHour" >1 hours</option>
+										<option name="translate" caption="twoeHour" selected>2 hours</option>
+										<option name="translate" caption="threeeHour">3 hours</option>
+										<option name="translate" caption="fourHour">4 hours</option>
+										<option name="translate" caption="fiveHour" >5 hours</option>
+										<option name="translate" caption="sixHour" >6 hours</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label name="translate" caption="matrClean" for="exampleForm">Do you require cleaning
+										materials?</label><br>
+									<div class="btn-group btn-block btn-group-toggle" data-toggle="buttons">
+										<label style="outline: none;box-shadow: none"
+											class="btn btn-outline-secondary  active">
+
+											<label name="translate" caption="noMatrClean">No</label>
+											<input type="radio" name="options" class="checkMatrial" value="No" checked>
+
+										</label>
+										<label style="outline: none;box-shadow: none"
+											class="btn btn-outline-secondary ">
+											<label name="translate" caption="yesMatrClean">Yes</label>
+											<input type="radio" name="options" class="checkMatrial" value="Yes">
+										</label>
+
+									</div>
+
+								</div>
+								<div class="form-group">
+
+									<label name="translate" caption="choosExtra" for="formExtra">Choose extra features</label>
+									<select class="form-control" id="formExtra">
+										<option name="translate" caption="matrAed" value="Materials 10 AED \ Hour">Materials 10 AED
+											\ Hour</option>
+										<option name="translate" caption="matrSavFiveAed"
+											value="20 hour save 5 % 475 AED\Per Month">20 hour save 5 % 475 AED\Per
+											Month</option>
+										<option name="translate" caption="matrSavTenAed"
+											value="50 hour save 10 % 1225 AED\Per Month">50 hour save 10 % 1225 AED\Per
+											Month</option>
+
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label name="translate" caption="specificReqst"  for="FormControlTextarea1">Do you have any
+										specific cleaning instructions?</label>
+									<textarea class="form-control" id="FormControlTextarea1" rows="3"
+										placeholder="Special requirements"></textarea>
+								</div>
+							</div>
+						</section>
+						<!-- SECTION 2 -->
+						<h2>
+							<span class="step-icon"><i class="fa fa-user-tie"></i></span>
+							<span name="translate" caption="staff" class="step-text" style="padding-left: 7px;">Staff</span>
+						</h2>
+						<section>
+							<div class="inner">
+								<h3 name="translate" caption="chooseCleaner">Choose Your Cleaner:</h3>
+								<div class="row">
+									<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+										<div class="card" style="width: 13rem;">
+											<div class="osahan-user text-center">
+												<div class="osahan-user-media">
+													<img class="mb-3 rounded-pill shadow-sm mt-1"
+														src="https://bootdey.com/img/Content/avatar/avatar6.png"
+														alt="gurdeep singh osahan" width="128" height="128">
+													<div class="osahan-user-media-body">
+														<h6 class="mb-2">Edward Singh</h6>
+														<p name="translate" caption="fivExprinc" class="mb-1">Five years' experience cleaning</p>
+													</div>
+												</div>
+											</div>
+											<hr>
+											<label class="container">
+												<input class="staffs" type="checkbox" name="extras" checked
+													value="Edward">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+
+									</div>
+									<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+										<div class="card" style="width: 13rem;">
+											<div class="osahan-user text-center">
+												<div class="osahan-user-media">
+													<img class="mb-3 rounded-pill shadow-sm mt-1"
+														src="https://bootdey.com/img/Content/avatar/avatar5.png"
+														alt="gurdeep singh osahan" width="128" height="128">
+													<div class="osahan-user-media-body">
+														<h6 class="mb-2">Nasreen Singh</h6>
+														<p name="translate" caption="threeExprinc"  class="mb-1">Three years' experience cleaning</p>
+													</div>
+												</div>
+											</div>
+											<hr>
+											<label class="container">
+												<input class="staffs" type="checkbox" name="extras" checked
+													value="Nasreen">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+
+									</div>
+									<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+										<div class="card" style="width: 13rem;">
+											<div class="osahan-user text-center">
+												<div class="osahan-user-media">
+													<img class="mb-3 rounded-pill shadow-sm mt-1"
+														src="https://bootdey.com/img/Content/avatar/avatar6.png"
+														alt="gurdeep singh osahan" width="128" height="128">
+													<div class="osahan-user-media-body">
+														<h6 class="mb-2">Banward Singh</h6>
+														<p name="translate" caption="fourExprinc"  class="mb-1">Four years' experience cleaning</p>
+													</div>
+												</div>
+											</div>
+											<hr>
+											<label class="container">
+												<input class="staffs" type="checkbox" name="extras" value="Banward">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+
+									</div>
+									<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+										<div class="card" style="width: 13rem;">
+											<div class="osahan-user text-center">
+												<div class="osahan-user-media">
+													<img class="mb-3 rounded-pill shadow-sm mt-1"
+														src="https://bootdey.com/img/Content/avatar/avatar5.png"
+														alt="gurdeep singh osahan" width="128" height="128">
+													<div class="osahan-user-media-body">
+														<h6 class="mb-2">Heba Singh</h6>
+														<p name="translate" caption="oneExprinc"  class="mb-1">One years' experience cleaning</p>
+													</div>
+												</div>
+											</div>
+											<hr>
+											<label class="container">
+												<input class="staffs" type="checkbox" name="extras" value="Heba">
+												<span class="checkmark"></span>
+											</label>
+										</div>
+
+									</div>
+								</div>
+
+
+							</div>
+						</section>
+						<!-- SECTION 3 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-calendar-note"></i></span>
+							<span name="translate" caption="dateTime" class="step-text">Date & Time</span>
+						</h2>
+						<section>
+							<div class="inner2">
+								<h3></h3>
+								<div style="overflow:hidden;">
+									<div class="form-group">
+										<div class="row">
+											<div class="col-md-12">
+												<label name="translate" caption="startDateTime"  class="labelDate"
+													for="datetimepicker12">When would you like your cleaning start?</label>
+												<div id="datetimepicker12"></div>
+												<input type="hidden" name="date" id="my_hidden_input" value="">
+
+											</div>
+											<div class="col-md-12">
+												<label name="translate" caption="endtDateTime" class="labelDate"
+													for="atetimepicker3">"When would you like your cleaning end?</label>
+												<div id="datetimepicker3"></div>
+												<input type="hidden" name="date" id="my_hidden_input2" value="">
+
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+						</section>
+						<!-- SECTION 4 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-lock"></i></span>
+							<span name="translate" caption="personal" class="step-text">Personal</span>
+						</h2>
+						<section>
+							<div class="inner">
+								<h3 name="translate" caption="personalInfo"  class="mb-3">Personal Information:</h3>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label name="translate" caption="personalName"  for="name">Name</label>
+										<input type="text" class="form-control" id="name" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label  name="translate" caption="selectCity" for="city">Select your city</label>
+										<select class="form-control" id="city">
+											<option name="translate" caption="chooseCity">Dubai</option>
+
+										</select>
+									</div>
+
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label name="translate" caption="personalEmail"  for="email">Email</label>
+										<input type="email" class="form-control" id="email" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label name="translate" caption="personalPhone"  for="phone">Phone</label>
+										<input type="text" class="form-control" id="phone" maxlength="10" required>
+									</div>
+
+
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-12">
+										<label name="translate" caption="promoCode" for="code">Promo Code</label>
+										<input type="text" class="form-control" id="code">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-12">
+										<label name="translate" caption="locatAdress" for="map">Locate your address</label>
+										<div  id='map' style='width: 100%; height: 230px;'></div>
+									</div>
+								</div>
+
+
+
+							</div>
+						</section>
+						<!-- SECTION 5 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-card"></i></span>
+							<span name="translate" caption="payment" class="step-text">Payment</span>
+						</h2>
+						<section>
+							<div class="inner">
+								<h3 name="translate" caption="paymentInfo">Payment Information:</h3>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<input type="radio" class="checkPay" name="radio1" id="pay-1"
+											value="Credit Card" checked>
+										<label class="pay-1-label" for="pay-1"><img src="./images/masterCard.png"
+												alt="pay-1">Credit Card</label>
+
+
+										<input type="radio" class="checkPay" name="radio1" id="pay-2" value="Paypal">
+										<label class="pay-2-label" for="pay-2"><img src="./images/payPal.png"
+												alt="pay-2">Paypal</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label name="translate" caption="holderName"  for="holder">Holder Name</label>
+										<input type="text" class="form-control" id="holder" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label name="translate" caption="cardNum" for="cardNum">Card Number</label>
+										<input type="text" class="form-control" id="cardNum" required>
+									</div>
+
+
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-12">
+										<label name="translate" caption="cvCode"   for="cvc">CVC</label>
+										<input type="text" class="form-control" id="cvc"
+											placeholder="Card verification Cod" required>
+									</div>
+
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+
+										<label name="translate" caption="expirDate" for="date">Expiry Date</label>
+										<select class="form-control" name="month_1" id="month_1">
+											<option name="translate" caption="dateMonth"  value="Month" disabled selected>Month</option>
+
+											<option value="Jan">Jan</option>
+											<option value="Feb">Feb</option>
+											<option value="Mar">Mar</option>
+											<option value="Apr">Apr</option>
+											<option value="May">May</option>
+											<option value="Jun">Jun</option>
+											<option value="Jul">Jul</option>
+											<option value="Aug">Aug</option>
+											<option value="Sept">Sept</option>
+											<option value="Oct">Oct</option>
+											<option value="Nov">Nov</option>
+											<option value="Dec">Dec</option>
+										</select>
+
+
+									</div>
+									<div class="form-group col-md-6">
+										<label for="date"></label>
+										<select class="form-control mt-2" name="year_1" id="year_1">
+											<option name="translate" caption="dateYear" value="Year" disabled selected>Year</option>
+											<option value="2019">2019</option>
+											<option value="2020">2020</option>
+											<option value="2021">2021</option>
+											<option value="2022">2022</option>
+											<option value="2023">2023</option>
+										</select>
+									</div>
+								</div>
+
+
+
+
+							</div>
+						</section>
+						<!-- SECTION 6 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
+							<span name="translate" caption="confirmInfo" class="step-text">Confirm</span>
+						</h2>
+						<section>
+							<div class="inner">
+								<h3 id="chnagPadding" name="translate" caption="confirmDetails">Confirm Details:</h3>
+
+								<ul class="list-group list-group-flush">
+									<li name="translate" caption="servicDetails"  class="list-group-item titleConfirm">Service details</li>
+									<li class="list-group-item">
+
+										<label name="translate" caption="cleanNames" class="text-muted">Cleaners Number :</label><label
+											class="text-muted" id="cleanrNum-val"></label><br>
+
+										<label name="translate" caption="duration"  class="text-muted">Duration :</label><label
+											class="text-muted" id="duration-val"></label><br>
+
+										<label name="translate" caption="matrials" class="text-muted">Material :</label><label
+											class="text-muted" id="material-val"></label><br>
+
+										<label name="translate" caption="extraFeatures"  class="text-muted">Extra Features :</label><label
+											lass="text-muted" id="extra-val"></label>
+									</li>
+
+
+								</ul>
+								<ul class="list-group list-group-flush">
+									<li name="translate" caption="dateTimeAdress"  class="list-group-item titleConfirm">Datetime / Address</li>
+									<li class="list-group-item">
+										<label name="translate" caption="confStarClean"  class="text-muted">Start Clean :</label><label
+											class="text-muted" id="startDatetime-val"></label><br>
+
+										<label name="translate" caption="confEndClean"  class="text-muted">End Clean :</label><label
+											class="text-muted" id="endDatetime-val"></label><br>
+
+										<label name="translate" caption="confAdress"  class="text-muted">Home Address :</label><label
+											class="text-muted" id="homeAdress-val"></label>
+									</li>
+
+
+								</ul>
+								<ul class="list-group list-group-flush">
+									<li name="translate" caption="confPayment"  class="list-group-item titleConfirm">Payment</li>
+									<li class="list-group-item">
+										<label name="translate" caption="confCarType"  class="text-muted">Card Type :</label><label
+											class="text-muted" id="cardType-val"></label><br><br>
+
+										<p class="text-muted ">Total : <label id="total-val" class="totalAed">264
+												AED</label></p>
+
+										<p class="text-muted">After Promo Code : <label id="afterPromo-val">224
+												AED</label></p>
+
+
+									</li>
+
+
+								</ul>
+
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item text-muted">
+										<input type="checkbox" name="check" class="mr-2">
+										<label name="translate" caption="readAccept" >I have read and accepted the</label>
+										<a href="#"><span name="translate" caption="termCond" ></span>Terms & Conditions</a> and
+
+										<a href="#"><span name="translate" caption="privaPolic">Privacy Policy</span></a>
+									</li>
+
+								</ul>
+
+							</div>
+						</section>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Footer -->
+	<footer class="bg-white">
+		<div class="container py-5">
+			<div class="row py-4">
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<img src="./images/ded.png" alt="" width="120" class="mb-3"><br>
+					<img src="./images/TelrSecure.png" alt="" width="120" class="mb-3">
+
+					<ul class="list-inline mt-4">
+						<li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
+									class="fab fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i
+									class="fab fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
+									class="fab fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank" title="linkedIn"><i
+									class="fab fa-linkedin"></i></a></li>
+
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+					<h6 name="translate" caption="siteMap" class="font-weight-bold mb-4">Sitemap</h6>
+					<ul class="list-unstyled mb-0">
+						<li class="mb-2"><a name="translate" caption="booking"  href="#" class="text-muted">Booking</a></li>
+						<li class="mb-2"><a name="translate" caption="myBooking"   href="#" class="text-muted">My Booking</a></li>
+						<li class="mb-2"><a name="translate" caption="about"  href="about.html" class="text-muted">About Us</a></li>
+						<li class="mb-2"><a name="translate" caption="contactus" href="contact-01.html" class="text-muted">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+					<h6 name="translate" caption="footInfo" class="font-weight-bold mb-4">Information</h6>
+					<ul class="list-unstyled mb-0">
+						<li class="mb-2"><a name="translate" caption="footTerm" href="#" class="text-muted">Terms & conditions</a></li>
+						<li class="mb-2"><a name="translate" caption="footPrivcy"  href="#" class="text-muted">Privacy policy</a></li>
+						<li class="mb-2"><a name="translate" caption="canWeUse"  href="#" class="text-muted">How Can We Use</a></li>
+						<li class="mb-2"><a name="translate" caption="discont" href="#" class="text-muted">Discount</a></li>
+						<li class="mb-2"><a name="translate" caption="footFaq" href="#" class="text-muted">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-lg-0">
+					<h6 name="translate" caption="footContacUs" class=" font-weight-bold mb-4">Contact Us</h6>
+					<h6 name="translate" caption="footAdress">Address</h6>
+					<p name="translate" caption="footAdressInfo" class="text-muted small">
+						Al-dhabi-cleaning, 06 Highley St,<br> Victoria, UAE.
+					</p>
+					<h6 name="translate" caption="footEmaiUs">E-mail Us</h6>
+					<p class="text-muted">
+						<ul class="list-unstyled mb-0">
+							<li><a href="mailto:Info@al-dhabi-cleaning.com?subject = Feedback&body = Message"
+									class="text-muted small">Info@al-dhabi-cleaning.com</a></li>
+
+							<li><a href="mailto:Support@al-dhabi-cleaning.com?subject = Feedback&body = Message"
+									class="text-muted small">Support@al-dhabi-cleaning.com</a></li>
+						</ul>
+					</p>
+					<div class="p-1 rounded border">
+						<div class="input-group">
+							<input type="email" placeholder="Enter your email address" aria-describedby="button-addon1"
+								class="form-control border-0 shadow-0 chnagePlaceHolder">
+							<div class="input-group-append">
+								<button id="button-addon1" type="submit" class="btn btn-link"><i
+										class="fa fa-paper-plane"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Copyrights -->
+		<div class="bg-light py-4">
+			<div class="container text-center">
+				<p  name="translate" caption="rightReserv" class="text-muted mb-0 py-2">© 2019 AL-Zabey All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+	<!-- Map js  -->
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+	<script
+		src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+
+	<!-- General js  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- <script src="js/jquery.localize.min.js"></script> -->
+	<script src="js/jquery.steps.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/translate.js"></script>
+
+
+
+
+</body>
+
+</html>
